@@ -13,7 +13,7 @@ pipeline {
    stage('Building image') {
       steps{
         script {
-          sh 'docker build -t flask  .' 
+          sh 'docker build -t flask -f ./Dockerfile.txt   .' 
 
         }
        }
